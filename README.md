@@ -7,7 +7,7 @@ Since it is crucial to my future success, especially in the fields that I have c
 Topics
 - descriptive statistics : mean, median, mode, variance, standard deviation
 - data visualisation : histograms, box plots, scatter plots
-- probability basics : conditional probability, independence, Bayes' theorem
+- probability basics : conditional probability, independence, Bayes' Theorem
 
 Coding Applications 
 - __Basic Data Analysis Script__ : write a Python script that calculates the mean, median, mode, variance, and standard deviation from a dataset
