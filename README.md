@@ -5,7 +5,7 @@ Since it is crucial to my future success, especially in the fields that I have c
 ## Study plan
 ### High School Statistics Foundation
 Topics
-- descriptive status : mean, median, mode, variance, standard deviation
+- descriptive statistics : mean, median, mode, variance, standard deviation
 - data visualisation : histograms, box plots, scatter plots
 - probability basics : conditional probability, independence, Bayes' theorem
 
