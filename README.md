@@ -35,6 +35,10 @@ Topics
 Coding Applications
 - __Statistical Testing in Python__ : use SciPy to run t-tests and chi-square tests on real datasets.
 - __Simple Machine Learning__ : implement a basic linear regression model to predict housing prices or another simple dataset
-- __Markov Chain Simulation__ : model a simple Markov process (e.g., a weather predictor that transitions between states
+- __Markov Chain Simulation__ : model a simple Markov process (e.g., a weather predictor that transitions between states)
 
 #### for Biology _to be designed_
+
+## Final Project-Based Learning
+- __Stock Market Analysis__ : analyze stock trends using probability distributions
+- __Spam Detection__ : use statistical methods to calssify emails as spam or not
