@@ -1,6 +1,6 @@
 # tuto-stats
 
-Since it is crucial to my future success, especially in the fields that I have chosen, I have committed to mastering statistics. This is repository is thus a collection of my attempts and notes to understand statistics, from a high school level to a university level, from a variety of sources.
+Since it is crucial to my future success, especially in the fields that I have chosen, I have committed to mastering statistics. This repository is thus a collection of my attempts and notes to understand statistics, from a high school level to a university level, from a variety of sources.
 
 ## Study plan
 ### High School Statistics Foundation
