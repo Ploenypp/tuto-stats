@@ -34,22 +34,17 @@ def mode(data) :
     
     return modes
 
-# population variance
-def p_variance(data) :
+def variance(data, correction = True) :
+    # correction : True -> sample variance / False -> population variance
     m = mean(data)
     sum = fsum([(x - m)**2 for x in data])
+    if correction : return sum/(len(data)-1)
     return sum/len(data)
 
-# sample variance
-def s_variance(data) :
-    m = mean(data)
-    sum = fsum([(x - m)**2 for x in data])
-    return sum/(len(data)-1)
-
 def standard_deviation(data, var = True) :
-    # var : true -> sample variance / false -> population variance
-    if var : return sqrt(s_variance(data))
-    return sqrt(p_variance(data))
+    # var : True -> sample variance / False -> population variance
+    if var : return sqrt(variance(data, True))
+    return sqrt(variance(data, False))
 
 def z_score(data,x) :
     return (x-mean(data))/standard_deviation(data)
