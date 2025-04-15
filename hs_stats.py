@@ -1,6 +1,5 @@
 from math import *
 from collections import Counter
-import numpy as np
 
 def mean(data) :
     return fsum(data)/len(data)
