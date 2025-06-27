@@ -1,44 +1,20 @@
 # tuto-stats
 
-Since it is crucial to my future success, especially in the fields that I have chosen, I have committed to mastering statistics. This repository is thus a collection of my attempts and notes to understand statistics, from a high school level to a university level, from a variety of sources.
+## Context 
+I never took statistics in high school since I got accepted to university in 11th grade. My first statistics class was thus a half-semester long statistics course for biology, which wasn't enough of a foundation to fully master another course, also a half-semester long, but for computer science.
 
-## Study plan
-### High School Statistics Foundation
-Topics
-- descriptive statistics : mean, median, mode, variance, standard deviation
-- data visualisation : histograms, box plots, scatter plots
-- probability basics : conditional probability, independence, Bayes' Theorem
+## Objective of this personal project
+- gain the missing statistics foundation
+- prepare for my masters 
+- master statistics for professional use
 
-Coding Applications 
-- __Basic Data Analysis Script__ : write a Python script that calculates the mean, median, mode, variance, and standard deviation from a dataset
-- __Data Visualization with Matplotlib/Seaborn__ : take a dataset (e.g., from Kaggle) and plot histograms, box plots, and scatter plots
-***
-### Probability & Combinatorics
-Topics
-- permutations, combinations
-- probability distributions : binomial, Poisson, normal
-- expectation & variance of random variables
-- Law of Large Numbers, Central Limit Theorem
+## Tutoring Plan
+### Probability
 
-Coding Applications
-- __Monte Carlo Simulation__ : estimate the probability of an event using random sampling (e.g., estimate π by simulating random points in a unit square)
-- __Dice Roll & Card Draw Simulation__ : simulate rolling dice and drawing cards, calculate empirical vs. theoretical probabilities
-***
-### University-Level Statistics
-#### for Computer Science
-Topics
-- hypothesis testing : t-tests, chi-square tests
-- regression analysis : linear, logistic regression
-- Bayesian inference
-- Markov Chains, Random Walks
+### Random Variables & Distributions
 
-Coding Applications
-- __Statistical Testing in Python__ : use SciPy to run t-tests and chi-square tests on real datasets.
-- __Simple Machine Learning__ : implement a basic linear regression model to predict housing prices or another simple dataset
-- __Markov Chain Simulation__ : model a simple Markov process (e.g., a weather predictor that transitions between states)
+### Statistical Inferences
 
-#### for Biology _to be designed_
-***
-## Final Project-Based Learning
-- __Stock Market Analysis__ : analyze stock trends using probability distributions
-- __Spam Detection__ : use statistical methods to calssify emails as spam or not
+### Hypothesis Testing
+
+### Maximum Likelihood Methods
