@@ -29,7 +29,7 @@ class Board :
 
     def place_block(self, player, x, y) :
         if x <= 0 or x >= self.dim - 1 or y <= 0 or y >= self.dim - 1 : # coordinate check
-            print("invalid coordinates")
+            print("(!) invalid coordinates")
             return False
         b = 0
         if player == 1 :
@@ -37,7 +37,7 @@ class Board :
                 if self.p1_blocks[b] == -1 : break
                 b += 1
             if b == self.dim :
-                print("no blocks available")
+                print("(!) no blocks available")
                 return False
             if self.grid[y][x] == " " : 
                 self.grid[y][x] = "☐"
@@ -48,7 +48,7 @@ class Board :
                 if self.p2_blocks[b] == -1 : break
                 b += 1
             if b == self.dim : 
-                print("no blocks available")
+                print("(!) no blocks available")
                 return False
             if self.grid[y][x] == " " : 
                 self.grid[y][x] = "◼︎"
@@ -59,7 +59,7 @@ class Board :
     def move_player(self, player, x, y) :
         # coordinate check by player class
         if self.grid[y][x] != " " :
-            print("inaccessible square")
+            print("(!) inaccessible square")
             return False
         if player == 1 :
             self.grid[self.p1[1]][self.p1[0]] = " "
@@ -99,22 +99,22 @@ class Player :
         match dir :
             case "a" :
                 if self.x == 0 : # left
-                    print("invalid move")
+                    print("(!) invalid move -- ",end="")
                     return False
                 if board.move_player(self.id, self.x - 1, self.y) : self.x -= 1
             case "w" :
                 if self.y == 0 : # up
-                    print("invalid move")
+                    print("(!) invalid move -- ",end="")
                     return False
                 if board.move_player(self.id, self.x, self.y - 1) : self.y -= 1
             case "s" : # down
                 if self.y == self.dim - 1 :
-                    print("invalid move")
+                    print("(!) invalid move -- ",end="")
                     return False
                 if board.move_player(self.id, self.x, self.y + 1) : self.y += 1
             case "d" : # right
                 if self.x == self.dim - 1 :
-                    print("invalid move")
+                    print("(!) invalid move -- ",end="")
                     return False
                 if board.move_player(self.id, self.x + 1, self.y) : self.x += 1
         return True
