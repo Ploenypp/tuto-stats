@@ -132,12 +132,16 @@ class CompletelyRandomBot :
         self.dim = dim
 
     def play(self) :
+        success = False
         if random() < 0.5 : # move
             moves = ["a","s","w","d"]
-            self.p.move_player(choice(moves),self.b)
+            success = self.p.move_player(choice(moves),self.b)
+            while not success :
+                success = self.p.move_player(choice(moves),self.b)
         else : # place block
-            self.p.place_block(randint(0,self.dim-1), randint(0,self.dim-1))
-    
+            success = self.p.place_block(randint(0,self.dim-1), randint(0,self.dim-1))
+            while not success :
+                success = self.p.place_block(randint(0,self.dim-1), randint(0,self.dim-1))
 
 # initialization
 dim = 10
