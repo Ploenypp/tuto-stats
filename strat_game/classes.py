@@ -1,5 +1,3 @@
-from random import random, randint, choice
-
 class Board :
     def __init__(self, dim) :
         self.dim = dim
@@ -34,8 +32,8 @@ class Board :
         self.grid[y1][x1] = marker
 
 class Block :
-    def __init__(self, marker, dim, board:Board) :
-        self.marker = marker
+    def __init__(self, dim, board:Board) :
+        self.marker = "◼︎"
         
         self.x = -1
         self.y = -1
@@ -57,7 +55,7 @@ class Block :
             self.active = False
 
     def place(self, x, y) :
-        if self.board.check_coordinates(x,y) :
+        if self.board.check_coordinates(x,y) and self.board.check_square(x,y) :
             self.board.place(self.marker, x, y)
             self.x = x
             self.y = y
@@ -76,14 +74,13 @@ class Player :
         self.dim = dim
         self.board = board
 
-        self.nb_blocks = dim/2 # VARIABLE
-        self.blocks = [Block()] * self.nb_blocks
+        self.blocks = [Block()] * (dim/2)
 
-    # checks if there are blocks available and returns the index of the first available block
+    # returns the index of the first available block
     def get_available_block(self) :
-        if self.nb_blocks == 0 : return -1
         for i in range(self.nb_blocks - 1) :
             if self.blocks[i].active == False : return i
+        return -1
     
     def place_block(self, idx, x, y) :
         return self.blocks[idx].place(x,y)
@@ -94,7 +91,7 @@ class Player :
 
         for x,y in coordinates :
             if not (self.board.check_coordinates(x,y) or self.board.check_square(x,y)) : return False
-            
+
         return True
 
     def move(self, dir) :
