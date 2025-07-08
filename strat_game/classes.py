@@ -86,13 +86,27 @@ class Player :
         return self.blocks[idx].place(x,y)
     
     # checks if currently surrounded
+    # True = surrounded
     def check_surrounded(self) :
         coordinates = [(self.x+1, self.y),(self.x,self.y+1),(self.x-1, self.y),(self.x, self.y-1)]
 
         for x,y in coordinates :
-            if not (self.board.check_coordinates(x,y) or self.board.check_square(x,y)) : return False
+            if not (self.board.check_coordinates(x,y) or self.board.check_square(x,y)) : return True
 
-        return True
+        return False
+    
+    def get_accessible_dir(self) :
+        x = self.x
+        y = self.y
+
+        dir = []
+
+        if x - 1 >= 0 and self.board.grid[y][x-1] == " " : dir.append("a")
+        if y - 1 >= 0 and self.board.grid[y-1][x] == " " : dir.append("w")
+        if y + 1 < self.dim and self.board.grid[y+1][x] == " " : dir.append("s")
+        if x + 1 < self.dim and self.board.grid[y][x+1] == " " : dir.append("d")
+
+        return dir
 
     def move(self, dir) :
         x = self.x
