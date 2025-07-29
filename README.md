@@ -1,6 +1,5 @@
 # tuto-stats
-
-Since it is crucial to my future success, especially in the fields that I have chosen, I have committed to mastering statistics. This repository is thus a collection of my attempts and notes to understand statistics, from a high school level to a university level, from a variety of sources.
+This is the initial work and plan that I had intended to do in order to study for my computer science statistics class. Due to time constraints, I was unable to finish this in time, but I've kept my plans and work as inspiration for the future.
 
 ## Study plan
 ### High School Statistics Foundation
