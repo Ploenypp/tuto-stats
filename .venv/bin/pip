@@ -1,4 +1,4 @@
-#!/Applications/GitHub/tuto-stats/.venv/bin/python3.12
+#!/Applications/GitHub/tuto-stats/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
